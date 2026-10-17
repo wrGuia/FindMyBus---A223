@@ -56,7 +56,7 @@ where.exe cloudflared
 and use that path instead.
 
 
-For flutter sdk and android sdk setup i highly recommend for you to look for tutorial in web, youtube or ask AI for help since putting it here would be very long and it will be more complicated to follow instructions
+For flutter sdk and android sdk setup i highly recommend for you to look for tutorial in web, youtube or ask AI for help since putting it here would be very long and it will be more complicated to follow instructions and a 10gb of storage atleast for android sdk
 
 
 1st Start the backend
