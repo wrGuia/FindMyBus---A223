@@ -1,3 +1,4 @@
+# Introduction
 Hello and Welcome this is the FindMyBus app and its a prototype that has two parts that work each other 
 
 Backend - The backend is made of django and the database it uses is SQLite, it serves routes, stops, and bus position, and it host staff dashboard in admin
@@ -62,12 +63,24 @@ For flutter sdk and android sdk setup i highly recommend for you to look for tut
 # Starting the backend
 Open the powershell or terminal in your IDE and open the folder that has manage.py file on it then paste this on the terminal powershell if your in IDE while if your in powershell just directly paste this
 
+```powershell
 cd "<path to>\findmybus_backend"
+```
+```powershell
 pip install -r requirements.txt
+```
+```powershell
 py manage.py migrate
+```
+```powershell
 $env:DJANGO_ALLOWED_HOSTS="localhost,127.0.0.1,10.0.2.2,.trycloudflare.com"
+```
+```powershell
 $env:DJANGO_CSRF_TRUSTED_ORIGINS="https://*.trycloudflare.com"
+```
+```powershell
 py manage.py runserver 0.0.0.0:8000
+```
 
 You should wait until Starting development server at http://0.0.0.0:8000/ has appeared
 
