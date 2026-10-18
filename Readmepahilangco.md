@@ -31,7 +31,7 @@ winget install Python.Python.3.13
 
 Close and reopen PowerShell afterwards. If winget isn't available, download Python from python.org and tick "Add python.exe to PATH" in the installer.
 
-Install Cludlfare
+Install Cloudlfare
 ```powershell
 winget install Cloudflare.cloudflared
 ```
