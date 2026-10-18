@@ -59,7 +59,7 @@ and use that path instead.
 For flutter sdk and android sdk setup i highly recommend for you to look for tutorial in web, youtube or ask AI for help since putting it here would be very long and it will be more complicated to follow instructions and a 10gb of storage atleast for android sdk
 
 
-1st Start the backend
+# Starting the backend
 Open the powershell or terminal in your IDE and open the folder that has manage.py file on it then paste this on the terminal powershell if your in IDE while if your in powershell just directly paste this
 
 cd "<path to>\findmybus_backend"
@@ -99,7 +99,7 @@ Now you login and you can see now the admin dashboard there might be times that 
 
 
 
-How to connect it with the phone. 
+# How to connect it with the phone. 
 
 First open a new powershell by clicking the plus icon above for new tab while in your own IDE you must click plus icon in terminal or click new terminal.
 
@@ -117,7 +117,7 @@ Now you can finally see the app running
 
 
 
-How to build the app
+# How to build the app
 
 open powershell either in your IDE or directly in your computer and run this command
 
@@ -134,9 +134,7 @@ copy it and send it to your phone via drive or others and click download
 
 Now the download is done you can run it by refering to the How to connect it to the phone and if you cannot find is in the above or click Ctrl+F and copy this statement  "How to connect it with the phone. " and paste this in the search bar
 
-
-
-Navigating the app 
+# Navigating the app 
 
 Now that you run the app and done pasting the server address in the settings we can now interact with the app and how it works
 
@@ -178,7 +176,7 @@ You can also set alert for a specific bus to arrive on your selected stop locati
 The buses in the map will show different colors green means on time, orange means delayed or deviate, and gray means offline or old position.
 
 
-Setting an alert.
+# Setting an alert.
 Open a route, then tap Notify me when a bus is near (or Alert me for this bus on a bus).
 Pick the stop and which bus.
 
@@ -189,31 +187,24 @@ Tap Start alert.
 
 Search tap the "Where are you going" above and you can type a place , stop or route, for example "Koreatown". Results show matching stops with their distance from you, and routes with their directions.
 
-
 Now lets go on the admin dashboard (you can't open this on app and you must refer to the steps on starting the backend if you want to access it)
-
 You can see all the buses that are running on all routes and you can see their status like their speed, their route, and if they deviate from the route.
 
-
-Troubleshoot tips
-
-can't open file manage.py - You're in the wrong folder. cd into the one that has manage.py (check with dir manage.py).
-
+#Troubleshoot tips
+Can't open file manage.py - You're in the wrong folder. cd into the one that has manage.py (check with dir manage.py).
 Server took too long - Wait about a minute after the first start while road lines build. Make sure the server window is still running.
-
 App can't connect - The tunnel link changed. Paste the new one in Settings and tap Test & save.
 
 
 
-Why we choose LA instead of Davao 
-
-We planned that FindMyBus to be designed for Davao City, but we werent able to access its api and its keys and we did try to find ways to know its api but we were unable since we got rejected of its access so instead we decided to use the LA Metro data 
+# Why we choose LA instead of Davao 
+We planned that FindMyBus to be designed for Davao City, but we werent able to access its api and its keys and we did try to find ways to know its api but we were unable since we got rejected of its access so instead we decided to use the LA Metro data.
 
 The davao dcbus api are not public and we cant access its live data, stops, and bus feed. Without those the app could not be tested on a real data.
 LA metro publishes its API for public and provide all our needs like stop locations and live bus data, which ables us to test our app with a real time data.
 The reason that we choose LA specifically is that i have relatives on there that might be able to help us on testing the app if it really works.
 
-Tester Feedback
+# Tester Feedback
 My feedback about the app is that navigation is a bit overwhelming but the app is quite helpful since it will alarm when your bus is about to arrive or pass. Comparing it other bus tracking app here in LA it has the feature like what i said before that it will alarm when your bus is about to arrive or pass but also you can check the traffic of the route you selected which is good and its aproach to be more on the passengers side compare it to like let say LA metro where it serves as a multipurpose where it tracks both buses and trains and you can able to plan your trips i would not say that the app is better than La metro or FindMyBus is bad but i like the way it uses feature that provides convenience to the passenger's side.
 
 The limitation for the is that it uses LA routes and the demo only makes sense to those people from LA and most of it features are not yet to be tested here in the davao roads
