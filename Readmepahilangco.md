@@ -189,7 +189,7 @@ You can also set alert for a specific bus to arrive on your selected stop locati
 The buses in the map will show different colors green means on time, orange means delayed or deviate, and gray means offline or old position.
 
 
-# Setting an alert.
+# Setting an alert
 Open a route, then tap Notify me when a bus is near (or Alert me for this bus on a bus).
 Pick the stop and which bus.
 
@@ -203,18 +203,19 @@ Search tap the "Where are you going" above and you can type a place , stop or ro
 Now lets go on the admin dashboard (you can't open this on app and you must refer to the steps on starting the backend if you want to access it)
 You can see all the buses that are running on all routes and you can see their status like their speed, their route, and if they deviate from the route.
 
-#Troubleshoot tips
+# Troubleshoot tips
 Can't open file manage.py - You're in the wrong folder. cd into the one that has manage.py (check with dir manage.py).
 Server took too long - Wait about a minute after the first start while road lines build. Make sure the server window is still running.
 App can't connect - The tunnel link changed. Paste the new one in Settings and tap Test & save.
 
 
 
-# Why we choose LA instead of Davao 
+# Why we choose LA instead of Davao?
 We planned that FindMyBus to be designed for Davao City, but we werent able to access its api and its keys and we did try to find ways to know its api but we were unable since we got rejected of its access so instead we decided to use the LA Metro data.
 
 The davao dcbus api are not public and we cant access its live data, stops, and bus feed. Without those the app could not be tested on a real data.
 LA metro publishes its API for public and provide all our needs like stop locations and live bus data, which ables us to test our app with a real time data.
+
 The reason that we choose LA specifically is that i have relatives on there that might be able to help us on testing the app if it really works.
 
 # Tester Feedback
