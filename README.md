@@ -13,6 +13,34 @@ cloudflared (to give your phone a public link to your PC)
 An Android phone
 Internet access: the backend fetches LA Metro stop data and road routing while it loads
 
+OOP Implemnentation
+
+The backend of the FindMyBus is organized into classes that has one job 
+
+Data Models: Route, Stop, Deviationevent, models.py
+Admin Screen: RouteAdmin, StopInline, DeviationEventAdmin, admin.py
+Fleet system: FleetService, RouteRuntime, Geometry, RouteConfig, fleet
+Calculations: SpeedSmoother, TrafficModel, DeviationTracker, DirectionTracker, Polyline, core
+Live data: MetroStream, feeds/stream.py
+Simulation: SimBus, fleet/simulator.py
+
+The four pillars of OOP
+
+Encapsulation: each calculation class keeps its data secure annd private, and it exposes some few methods.
+TrafficModel hides its reading in _kmh and _seen and is used only through observe(),
+DeviationTracker hides _tracks behind update() and the SpeedSmoother hides _ema at the back of add() and get()
+
+Inheritance: Our classes extend Django's classes.
+Route, Stop, and DeviationEvent inherit from models.Models.
+RouteAdmin inherits the ModelAdmin while StopInline inherits the TabularInline and the manager command inherits BaseCommand.
+
+Polymorphism: The subclasses override parent methods. 
+DeviationEventAdmin overrides has_add_permission in order for log entries to not be added by hand.
+The models override __str__, and each command overrides handle()
+
+Abstraction: The FleetService class hides the LA Metro, OSRM, the simulator and caching.
+The view only call get_fleet().snapshot. Polyline hides the maths for distances and snapping a GPS point to a route.
+
 
 here are the command for both python and cloudflare
 
