@@ -1,7 +1,7 @@
 # Introduction
 Hello and Welcome this is the FindMyBus app and its a prototype that has two parts that work each other 
 
-Backend - The backend is made of django and the database it uses is SQLite, it serves routes, stops, and bus position, and it host staff dashboard in admin
+Backend - The backend is made of Django and the database it uses is SQLite, it serves routes, stops, and bus position, and it host staff dashboard in admin
 Mobile app - The app is made with Flutter and Android the user interacting with map, ETA, traffic status, and arrival alerts.
 
 For it to run you must need to get its address first, before anything shows up in the app
